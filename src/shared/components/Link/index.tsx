@@ -2,10 +2,12 @@ import React from 'react';
 import { HeaderLink } from './style';
 
 const Link = (props: any) => {
-	const { text } = props;
+	const { text, style } = props;
 	return (
 		<React.Fragment>
-			<HeaderLink href='/'>{text}</HeaderLink>
+			<HeaderLink href='/' style={style}>
+				{text}
+			</HeaderLink>
 		</React.Fragment>
 	);
 };

@@ -1,8 +1,32 @@
 import React from 'react';
-import { HeaderWrap } from './style';
+import { HeaderWrap, LogIn, LogoNavWrap, Search } from './style';
+
+import Nav from '../Nav';
+import Logo from '../../../shared/components/Logo';
+import Link from '../../../shared/components/Link';
+import CallToAction from '../../../shared/components/CTA';
+
+// Assets
+import SearchBtn from '../../../assets/icon-search.png';
 
 const Header = () => {
-	return <div>header</div>;
+	return (
+		<HeaderWrap>
+			<LogoNavWrap>
+				<Logo first style={{ marginRight: '144px' }} />
+				<Nav />
+			</LogoNavWrap>
+			<LogIn>
+				<Link text='Log In' style={{ marginRight: '38px' }} />
+				<CallToAction
+					started
+					text='Get started'
+					style={{ marginRight: '30px' }}
+				/>
+				<Search src={SearchBtn} />
+			</LogIn>
+		</HeaderWrap>
+	);
 };
 
 export default Header;

@@ -32,7 +32,7 @@ export default createGlobalStyle`
 	html, body, #root {
 		height: 100%;
 		margin: 0;
-		font-family: 'Playfair Display', serif;
+		font-family: 'Roboto', sans-serif;
 		box-sizing: border-box;
 		font-size: 16px;
 	}
@@ -121,14 +121,28 @@ export default createGlobalStyle`
 		display: inline-block;
 		text-decoration: none;
 		font-size: 1.125rem;
+		cursor: pointer;
 	}
 
 	ul {
+		display: flex;
+		align-items: center;
 		margin: 0;
 		padding: 0;
 	}
 
 	li {
 		list-style-type: none;
+		margin-right: 38px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	.cta {
+		font-weight: 500;
+		text-transform: capitalize;
+		color: ${color.white};
 	}
 `;
