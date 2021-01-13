@@ -45,7 +45,7 @@ export default createGlobalStyle`
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-		background: linear-gradient(${color.lightBlue}, transparent, ${color.lightBlue})
+		
 	}
 
 	main {

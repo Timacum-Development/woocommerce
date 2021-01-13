@@ -1,7 +1,15 @@
 import React from 'react';
+import { Hero, WooImg } from './style';
+
+// Assets
+import WooLetter from '../../../assets/w.png';
 
 const Homepage = () => {
-	return <div>woocommerce</div>;
+	return (
+		<Hero>
+			<WooImg src={WooLetter} />
+		</Hero>
+	);
 };
 
 export default Homepage;
