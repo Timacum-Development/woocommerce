@@ -116,4 +116,19 @@ export default createGlobalStyle`
 	p {
 		font-size: 1.125rem;
 	}
+
+	a {
+		display: inline-block;
+		text-decoration: none;
+		font-size: 1.125rem;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		list-style-type: none;
+	}
 `;
