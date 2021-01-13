@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { color } from '../shared/styles';
 
 export default createGlobalStyle`
 	@font-face {
@@ -44,6 +45,7 @@ export default createGlobalStyle`
 		display: flex;
 		flex-direction: column;
 		height: 100%;
+		background: linear-gradient(${color.lightBlue}, transparent, ${color.lightBlue})
 	}
 
 	main {
@@ -85,5 +87,33 @@ export default createGlobalStyle`
 	h6 {
 		margin: 0;
 		text-align: left;
+	}
+
+	h1 {
+		font-size: 5.3125rem;
+	}
+
+	h2 {
+		font-size: 3.4375rem;
+	}
+
+	h3 {
+		font-size: 2.25rem;
+	}
+
+	h4 {
+		font-size: 1.875rem;
+	}
+
+	h5 {
+		font-size: 1.25rem;
+	}
+
+	h6 {
+		font-size: 0.875rem;
+	}
+
+	p {
+		font-size: 1.125rem;
 	}
 `;
