@@ -2,29 +2,30 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 	@font-face {
-		font-family: 'museo_sans300', sans;
-		src: url('museosans-300-webfont.woff2') format('woff2'),
-			url('museosans-300-webfont.woff') format('woff');
-		font-weight: 300;
-		font-style: normal;
+    font-family: 'Circula';
+    src: url('Circula-Medium.woff2') format('woff2'),
+        url('Circula-Medium.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 	}
 
-
 	@font-face {
-		font-family: 'museo_sans500', sans;
-		src: url('museosans_500-webfont.woff2') format('woff2'),
-			url('museosans_500-webfont.woff') format('woff');
-		font-weight: 500;
-		font-style: normal;
+    font-family: 'Circula';
+    src: url('Circula-Medium.woff2') format('woff2'),
+        url('Circula-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 	}
 
-
 	@font-face {
-		font-family: 'museo_sans700', sans;
-		src: url('museosans_700-webfont.woff2') format('woff2'),
-			url('museosans_700-webfont.woff') format('woff');
-		font-weight: 700;
-		font-style: normal;
+    font-family: 'Circula';
+    src: url('Circula-Medium.woff2') format('woff2'),
+        url('Circula-Medium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 	}
 
 	html, body, #root {
