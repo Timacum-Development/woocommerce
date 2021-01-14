@@ -8,19 +8,19 @@ const Nav = () => {
 		<Navigation>
 			<ul>
 				<li>
-					<Link text='Sell' />
+					<Link head text='Sell' />
 				</li>
 				<li>
-					<Link text='Marketplace' />
+					<Link head text='Marketplace' />
 				</li>
 				<li>
-					<Link text='Community' />
+					<Link head text='Community' />
 				</li>
 				<li>
-					<Link text='Develop' />
+					<Link head text='Develop' />
 				</li>
 				<li>
-					<Link text='Resources' />
+					<Link head text='Resources' />
 				</li>
 			</ul>
 		</Navigation>

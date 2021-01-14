@@ -17,7 +17,7 @@ const Header = () => {
 				<Nav />
 			</LogoNavWrap>
 			<LogIn>
-				<Link text='Log In' style={{ marginRight: '38px' }} />
+				<Link head text='Log In' style={{ marginRight: '38px' }} />
 				<CallToAction
 					started
 					text='Get started'

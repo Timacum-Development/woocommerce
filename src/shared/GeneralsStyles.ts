@@ -3,7 +3,7 @@ import { color } from '../shared/styles';
 
 export default createGlobalStyle`
 	@font-face {
-    font-family: 'Circula';
+    font-family: 'Circula', sans-serif;
     src: url('Circula-Medium.woff2') format('woff2'),
         url('Circula-Medium.woff') format('woff');
     font-weight: 700;
@@ -12,7 +12,7 @@ export default createGlobalStyle`
 	}
 
 	@font-face {
-    font-family: 'Circula';
+    font-family: 'Circula', sans-serif;
     src: url('Circula-Medium.woff2') format('woff2'),
         url('Circula-Medium.woff') format('woff');
     font-weight: 500;
@@ -21,7 +21,7 @@ export default createGlobalStyle`
 	}
 
 	@font-face {
-    font-family: 'Circula';
+    font-family: 'Circula', sans-serif;
     src: url('Circula-Medium.woff2') format('woff2'),
         url('Circula-Medium.woff') format('woff');
     font-weight: 400;
@@ -110,6 +110,15 @@ export default createGlobalStyle`
 		font-size: 1.875rem;
 	}
 
+	.adidas {
+		max-width: 260px;
+		font-family: 'Circula', sans-serif;
+		font-weight: 400;
+		color: ${color.lightBlack};
+		line-height: 38px;
+		margin-bottom: 39px;
+		}
+
 	h5 {
 		font-size: 1.25rem;
 	}
@@ -152,5 +161,6 @@ export default createGlobalStyle`
 		font-weight: 500;
 		text-transform: capitalize;
 		color: ${color.white};
+		text-align: center;
 	}
 `;

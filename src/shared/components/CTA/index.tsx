@@ -6,19 +6,19 @@ const CallToAction = (props: any) => {
 	return (
 		<React.Fragment>
 			{started ? (
-				<RenCta className='cta' style={style}>
+				<RenCta href='/' className='cta' style={style}>
 					{text}
 				</RenCta>
 			) : !started && action ? (
-				<Action className='cta' style={style}>
+				<Action className='cta' style={style} href='/'>
 					{text}
 				</Action>
 			) : !action && green ? (
-				<GreenCta className='cta' style={style}>
+				<GreenCta className='cta' style={style} href='/'>
 					{text}
 				</GreenCta>
 			) : (
-				<TransparentCta className='cta' style={style}>
+				<TransparentCta className='cta' style={style} href='/'>
 					{text}
 				</TransparentCta>
 			)}
