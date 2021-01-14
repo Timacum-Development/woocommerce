@@ -10,4 +10,10 @@ export const Numbers = styled.a`
 	color: ${color.grey};
 	background-color: ${color.darkWhite};
 	border-radius: 5px;
+	transition: 0.25s ease-in-out;
+
+	&:hover {
+		background-color: ${color.grey};
+		color: ${color.darkWhite};
+	}
 `;
