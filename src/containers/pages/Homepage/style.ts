@@ -192,3 +192,43 @@ export const SaleImg = styled.img`
 	top: -100px;
 	left: -80px;
 `;
+
+export const CartIcon = styled.a`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 76px;
+	height: 76px;
+	border-radius: 50%;
+	background-color: ${color.darkYellow};
+	position: absolute;
+	left: -40px;
+	bottom: 24px;
+	transition: 0.25s ease-in-out;
+
+	&:hover {
+		background-color: ${color.red};
+	}
+`;
+
+export const Icon = styled.img`
+	display: block;
+`;
+
+export const SecurityIcon = styled.a`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 98px;
+	height: 68px;
+	background-color: ${color.red};
+	border-radius: 31px;
+	position: absolute;
+	right: 180px;
+	bottom: -80px;
+	transition: 0.25s ease-in-out;
+
+	&:hover {
+		background-color: ${color.darkYellow};
+	}
+`;

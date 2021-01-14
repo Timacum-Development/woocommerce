@@ -21,7 +21,10 @@ import {
 	AddToCart,
 	CartNumber,
 	CardHero,
-	SaleImg
+	SaleImg,
+	CartIcon,
+	Icon,
+	SecurityIcon
 } from './style';
 
 // Assets
@@ -33,7 +36,10 @@ import SaleGirls from '../../../assets/sale-girls.png';
 import Dots1 from '../../../assets/blue-horizontal-hero.png';
 import Dots2 from '../../../assets/blue-vertical-hero.png';
 import Dots3 from '../../../assets/purple-vertical-hero.png';
+import WhiteCart from '../../../assets/cart.png';
+import SecurityCheck from '../../../assets/safe-second.png';
 
+// Components
 import CallToAction from '../../../shared/components/CTA';
 import Link from '../../../shared/components/Link';
 import Number from '../../../shared/components/Number';
@@ -65,6 +71,19 @@ const Homepage = () => {
 				<OfferWrap>
 					<OfferImg src={Sneakers} />
 					<Offer>
+						<CallToAction
+							green
+							text='Sale'
+							style={{
+								position: 'absolute',
+								top: '-30px',
+								left: '32%',
+								textTransform: 'uppercase',
+								letterSpacing: '5px',
+								padding: '17px 43px',
+								fontWeight: '700'
+							}}
+						/>
 						<OfferText>
 							<Shoes>Shoes</Shoes>
 							<Originals>Adidas Originals</Originals>
@@ -102,6 +121,12 @@ const Homepage = () => {
 					<PaymentCard logoPayment={Payment2} text='Paypal payments' />
 					<PaymentCard logoPayment={Payment3} text='Bank Transfers' />
 				</CardHero>
+				<CartIcon href='/'>
+					<Icon src={WhiteCart} />
+				</CartIcon>
+				<SecurityIcon href='/'>
+					<Icon src={SecurityCheck} />
+				</SecurityIcon>
 			</HeroWrap>
 		</Hero>
 	);
