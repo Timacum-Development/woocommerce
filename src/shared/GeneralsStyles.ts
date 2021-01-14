@@ -91,6 +91,11 @@ export default createGlobalStyle`
 
 	h1 {
 		font-size: 5.3125rem;
+		font-family: 'Circula';
+		font-weight: 700;
+		line-height: 95px;
+		color: ${color.darkNavy};
+		margin-bottom: 21px;
 	}
 
 	h2 {
@@ -115,6 +120,9 @@ export default createGlobalStyle`
 
 	p {
 		font-size: 1.125rem;
+		line-height: 25px;
+		color: ${color.lightGrey};
+		
 	}
 
 	a {

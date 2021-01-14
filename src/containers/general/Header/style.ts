@@ -7,7 +7,7 @@ export const HeaderWrap = styled.header`
 	width: 100%;
 	padding: 40px 66px;
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 `;
 
 export const LogoNavWrap = styled.div`

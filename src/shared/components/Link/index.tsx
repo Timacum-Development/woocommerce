@@ -1,13 +1,23 @@
 import React from 'react';
-import { HeaderLink } from './style';
+import { HeaderLink, BlueLink, RegularLink } from './style';
 
 const Link = (props: any) => {
-	const { text, style } = props;
+	const { text, style, head, blue } = props;
 	return (
 		<React.Fragment>
-			<HeaderLink href='/' style={style}>
-				{text}
-			</HeaderLink>
+			{head ? (
+				<HeaderLink href='/' style={style}>
+					{text}
+				</HeaderLink>
+			) : !head && blue ? (
+				<BlueLink href='/' style={style}>
+					{text}
+				</BlueLink>
+			) : (
+				<RegularLink href='/' style={style}>
+					{text}
+				</RegularLink>
+			)}
 		</React.Fragment>
 	);
 };
