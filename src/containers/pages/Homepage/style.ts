@@ -70,7 +70,6 @@ export const OfferImg = styled.img`
 
 export const Offer = styled.div`
 	background-color: ${color.white};
-	width: 454px;
 	height: 422px;
 	padding: 45px 45px 17px 45px;
 `;
@@ -174,4 +173,22 @@ export const CartNumber = styled.a`
 		top: 44%;
 		right: 16px;
 	}
+`;
+
+export const CardHero = styled.div`
+	width: 406px;
+	background-color: ${color.white};
+	border-radius: 20px;
+	padding: 32px 16px 32px 22px;
+	position: absolute;
+	bottom: -125px;
+	left: 100px;
+`;
+
+export const SaleImg = styled.img`
+	display: block;
+	border-radius: 20px;
+	position: absolute;
+	top: -100px;
+	left: -80px;
 `;

@@ -19,15 +19,26 @@ import {
 	Price,
 	PriceCrossed,
 	AddToCart,
-	CartNumber
+	CartNumber,
+	CardHero,
+	SaleImg
 } from './style';
 
 // Assets
 import Sneakers from '../../../assets/sneakers.png';
+import Payment1 from '../../../assets/stripe-logo.png';
+import Payment2 from '../../../assets/paypal-logo.png';
+import Payment3 from '../../../assets/vector.png';
+import SaleGirls from '../../../assets/sale-girls.png';
+import Dots1 from '../../../assets/blue-horizontal-hero.png';
+import Dots2 from '../../../assets/blue-vertical-hero.png';
+import Dots3 from '../../../assets/purple-vertical-hero.png';
 
 import CallToAction from '../../../shared/components/CTA';
 import Link from '../../../shared/components/Link';
 import Number from '../../../shared/components/Number';
+import PaymentCard from '../../../shared/components/HeroCard';
+import DotGroup from '../../../shared/components/DotsImg';
 
 const Homepage = () => {
 	return (
@@ -47,6 +58,10 @@ const Homepage = () => {
 				</CtaWrap>
 			</HeroIntro>
 			<HeroWrap>
+				<DotGroup dotsGroup={Dots1} style={{ left: '-120px' }} />
+				<DotGroup dotsGroup={Dots2} style={{ left: '300px', top: '-150px' }} />
+				<DotGroup dotsGroup={Dots3} style={{ right: '80px', top: '40%' }} />
+				<SaleImg src={SaleGirls} />
 				<OfferWrap>
 					<OfferImg src={Sneakers} />
 					<Offer>
@@ -82,6 +97,11 @@ const Homepage = () => {
 						/>
 					</Offer>
 				</OfferWrap>
+				<CardHero>
+					<PaymentCard logoPayment={Payment1} text='Stripe gateway' />
+					<PaymentCard logoPayment={Payment2} text='Paypal payments' />
+					<PaymentCard logoPayment={Payment3} text='Bank Transfers' />
+				</CardHero>
 			</HeroWrap>
 		</Hero>
 	);
