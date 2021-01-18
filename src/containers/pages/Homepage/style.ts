@@ -70,8 +70,7 @@ export const OfferImg = styled.img`
 
 export const Offer = styled.div`
 	background-color: ${color.white};
-	height: 422px;
-	padding: 45px 45px 17px 45px;
+	padding: 45px 45px 36px 45px;
 `;
 
 export const OfferText = styled.div`
@@ -107,14 +106,15 @@ export const Cart = styled.div`
 `;
 
 export const PriceWrap = styled.div`
-	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 `;
 
 export const Price = styled.p`
 	font-size: 1.5rem;
 	font-weight: 500;
 	color: ${color.purple};
-	position: relative;
 `;
 
 export const PriceCrossed = styled.p`
@@ -122,8 +122,6 @@ export const PriceCrossed = styled.p`
 	font-weight: 500;
 	color: ${color.grey};
 	text-decoration: line-through;
-	position: absolute;
-	right: 0;
 `;
 
 export const AddToCart = styled.div`
@@ -225,10 +223,19 @@ export const SecurityIcon = styled.a`
 	border-radius: 31px;
 	position: absolute;
 	right: 180px;
-	bottom: -80px;
+	bottom: -50px;
 	transition: 0.25s ease-in-out;
 
 	&:hover {
 		background-color: ${color.darkYellow};
 	}
+`;
+
+export const Ecommerce = styled.section`
+	text-align: center;
+`;
+
+export const EcommerceWrap = styled.div`
+	display: flex;
+	justify-content: space-between;
 `;

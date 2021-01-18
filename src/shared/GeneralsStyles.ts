@@ -100,6 +100,10 @@ export default createGlobalStyle`
 
 	h2 {
 		font-size: 3.4375rem;
+		line-height: 70px;
+		max-width: 500px;
+		text-align: center;
+		margin: 0 auto;
 	}
 
 	h3 {
