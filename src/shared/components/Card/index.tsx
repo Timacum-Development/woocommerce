@@ -5,15 +5,17 @@ import {
 	CardTitle,
 	CardText,
 	BlueLink,
-	TextWrap
+	TextWrap,
+	Number
 } from './style';
 
 const Card = (props: any) => {
-	const { cardPic, title, text, blueText, style } = props;
+	const { cardPic, title, text, blueText, style, number } = props;
 	return (
 		<React.Fragment>
 			<EcommerceCard style={style}>
 				<CardImg src={cardPic} />
+				<Number>{number}</Number>
 				<TextWrap>
 					<CardTitle>{title}</CardTitle>
 					<CardText>{text}</CardText>

@@ -43,6 +43,16 @@ import SecurityCheck from '../../../assets/safe-second.png';
 import Card1 from '../../../assets/card1.png';
 import Card2 from '../../../assets/card2.png';
 import Card3 from '../../../assets/card3.png';
+import Small1 from '../../../assets/apple.png';
+import Small2 from '../../../assets/payment.png';
+import Small3 from '../../../assets/square.png';
+import Small4 from '../../../assets/chimpmail.png';
+import Small5 from '../../../assets/facebook.png';
+import Small6 from '../../../assets/jetpack.png';
+import Small7 from '../../../assets/google-ads.png';
+import Small8 from '../../../assets/card-small1.png';
+import Small9 from '../../../assets/card-small2.png';
+import Small10 from '../../../assets/card-small3.png';
 
 // Components
 import CallToAction from '../../../shared/components/CTA';
@@ -51,6 +61,7 @@ import Number from '../../../shared/components/Number';
 import PaymentCard from '../../../shared/components/HeroCard';
 import DotGroup from '../../../shared/components/DotsImg';
 import Card from '../../../shared/components/Card';
+import CardImg from '../../../shared/components/CardImg';
 
 const Homepage = () => {
 	return (
@@ -142,18 +153,41 @@ const Homepage = () => {
 			<Ecommerce>
 				<h2>Your eCommerce made simple</h2>
 				<EcommerceWrap>
+					<CardImg smallPic={Small1} imgStyle={{ left: '-80px' }} />
+					<CardImg
+						smallPic={Small2}
+						imgStyle={{ top: '50px', left: '-106px' }}
+					/>
 					<Card
 						title='All You Need to Start'
 						text='Add WooCommerce plugin to any WordPress site and set up a new store in minutes.'
 						cardPic={Card1}
 						blueText='Ecommerce for Wordpress ›'
 					/>
+					<CardImg smallPic={Small3} imgStyle={{ left: '38%', top: '50px' }} />
+					<CardImg smallPic={Small4} imgStyle={{ left: '55%', top: '95px' }} />
+					<CardImg smallPic={Small5} imgStyle={{ left: '38%', top: '180px' }} />
+					<CardImg smallPic={Small6} imgStyle={{ left: '50%', top: '210px' }} />
+					<CardImg smallPic={Small7} imgStyle={{ left: '45%', top: '325px' }} />
 					<Card
 						title='Customize and Extend'
 						text='From subscriptions to gym classes to luxury cars, WooCommerce is fully customizable.'
 						cardPic={Card2}
 						blueText='Browse Extensions ›'
 						style={{ top: '75px' }}
+						number='50%'
+					/>
+					<CardImg
+						smallPic={Small8}
+						imgStyle={{ right: '-60px', top: '55%' }}
+					/>
+					<CardImg
+						smallPic={Small9}
+						imgStyle={{ right: '260px', top: '100px' }}
+					/>
+					<CardImg
+						smallPic={Small10}
+						imgStyle={{ right: '50px', top: '20px' }}
 					/>
 					<Card
 						title='Active Community'

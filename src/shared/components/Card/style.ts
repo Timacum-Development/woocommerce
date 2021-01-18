@@ -38,3 +38,11 @@ export const TextWrap = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 `;
+
+export const Number = styled.span`
+	font-size: 3.4375rem;
+	line-height: 70px;
+	position: absolute;
+	bottom: 170px;
+	right: 17px;
+`;
