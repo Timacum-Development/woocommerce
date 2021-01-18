@@ -232,7 +232,8 @@ export const SecurityIcon = styled.a`
 `;
 
 export const Ecommerce = styled.section`
-	text-align: center;
+	padding-bottom: 56.25%;
+	height: 0;
 `;
 
 export const EcommerceWrap = styled.div`
@@ -241,4 +242,41 @@ export const EcommerceWrap = styled.div`
 	max-width: 1430px;
 	margin: 0 auto;
 	position: relative;
+`;
+
+export const Documentation = styled.section`
+	background-color: ${color.purple};
+	height: 1000px;
+	position: relative;
+	z-index: 1;
+
+	&:before {
+		content: '';
+		width: 100%;
+		height: 150px;
+		background-color: ${color.white};
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -75px;
+		z-index: -1;
+		clip-path: ellipse(55% 50% at 50% 50%);
+	}
+
+	&:after {
+		content: '';
+		width: 100%;
+		height: 150px;
+		background-color: ${color.white};
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -75px;
+		z-index: -1;
+		clip-path: ellipse(55% 50% at 50% 50%);
+	}
+`;
+
+export const InfoWrap = styled.div`
+	text-align: center;
 `;

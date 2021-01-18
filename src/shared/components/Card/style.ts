@@ -31,6 +31,11 @@ export const BlueLink = styled.a`
 	line-height: 25px;
 	font-weight: 700;
 	text-align: left;
+	transition: 0.25s ease-in-out;
+
+	&:hover {
+		color: ${color.black};
+	}
 `;
 
 export const TextWrap = styled.div`

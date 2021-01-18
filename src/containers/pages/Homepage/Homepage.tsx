@@ -26,7 +26,8 @@ import {
 	Icon,
 	SecurityIcon,
 	Ecommerce,
-	EcommerceWrap
+	EcommerceWrap,
+	Documentation
 } from './style';
 
 // Assets
@@ -198,6 +199,7 @@ const Homepage = () => {
 					/>
 				</EcommerceWrap>
 			</Ecommerce>
+			<Documentation></Documentation>
 		</React.Fragment>
 	);
 };

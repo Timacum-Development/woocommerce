@@ -68,13 +68,7 @@ export default createGlobalStyle`
 	}
 
 	.container {
-		max-width: 1280px;
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	.container2 {
-		max-width: 1680px;
+		max-width: 1600px;
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -109,6 +103,11 @@ export default createGlobalStyle`
 
 	h3 {
 		font-size: 2.25rem;
+	}
+
+	.info-text {
+		color: ${color.white};
+		margin-bottom: 13px;
 	}
 
 	h4 {
