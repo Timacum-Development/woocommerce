@@ -233,9 +233,12 @@ export const SecurityIcon = styled.a`
 
 export const Ecommerce = styled.section`
 	text-align: center;
+	max-width: 1628px;
+	margin: 0 auto;
 `;
 
 export const EcommerceWrap = styled.div`
 	display: flex;
 	justify-content: space-between;
+	max-width: 1430px;
 `;

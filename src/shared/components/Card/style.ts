@@ -6,6 +6,7 @@ export const EcommerceCard = styled.div`
 	flex-direction: column;
 	width: 33%;
 	max-width: 430px;
+	position: relative;
 `;
 
 export const CardImg = styled.img`
@@ -23,4 +24,17 @@ export const CardText = styled.p`
 	line-height: 30px;
 	margin-bottom: 25px;
 	text-align: left;
+`;
+
+export const BlueLink = styled.a`
+	color: ${color.blue};
+	line-height: 25px;
+	font-weight: 700;
+	text-align: left;
+`;
+
+export const TextWrap = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 `;

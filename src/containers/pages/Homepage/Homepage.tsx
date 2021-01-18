@@ -146,16 +146,21 @@ const Homepage = () => {
 						title='All You Need to Start'
 						text='Add WooCommerce plugin to any WordPress site and set up a new store in minutes.'
 						cardPic={Card1}
+						blueText='Ecommerce for Wordpress ›'
 					/>
 					<Card
 						title='Customize and Extend'
 						text='From subscriptions to gym classes to luxury cars, WooCommerce is fully customizable.'
 						cardPic={Card2}
+						blueText='Browse Extensions ›'
+						style={{ top: '75px' }}
 					/>
 					<Card
 						title='Active Community'
 						text='WooCommerce is one of the fastest-growing eCommerce communities. '
 						cardPic={Card3}
+						blueText='Check our Forums ›'
+						style={{ top: '150px' }}
 					/>
 				</EcommerceWrap>
 			</Ecommerce>

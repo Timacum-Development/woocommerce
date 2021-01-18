@@ -1,19 +1,24 @@
 import React from 'react';
-import { EcommerceCard, CardImg, CardTitle, CardText } from './style';
-
-import Link from '../Link';
+import {
+	EcommerceCard,
+	CardImg,
+	CardTitle,
+	CardText,
+	BlueLink,
+	TextWrap
+} from './style';
 
 const Card = (props: any) => {
-	const { cardPic, title, text } = props;
+	const { cardPic, title, text, blueText, style } = props;
 	return (
 		<React.Fragment>
-			<EcommerceCard>
+			<EcommerceCard style={style}>
 				<CardImg src={cardPic} />
-				<div>
+				<TextWrap>
 					<CardTitle>{title}</CardTitle>
 					<CardText>{text}</CardText>
-					<Link blue />
-				</div>
+					<BlueLink>{blueText}</BlueLink>
+				</TextWrap>
 			</EcommerceCard>
 		</React.Fragment>
 	);
