@@ -27,7 +27,8 @@ import {
 	SecurityIcon,
 	Ecommerce,
 	EcommerceWrap,
-	Documentation
+	Documentation,
+	InfoWrap
 } from './style';
 
 // Assets
@@ -199,7 +200,9 @@ const Homepage = () => {
 					/>
 				</EcommerceWrap>
 			</Ecommerce>
-			<Documentation></Documentation>
+			<Documentation>
+				<InfoWrap className='container'></InfoWrap>
+			</Documentation>
 		</React.Fragment>
 	);
 };
