@@ -108,6 +108,7 @@ export default createGlobalStyle`
 	.info-text {
 		color: ${color.white};
 		margin-bottom: 13px;
+		max-width: 265px;
 	}
 
 	h4 {
@@ -135,7 +136,13 @@ export default createGlobalStyle`
 		font-size: 1.125rem;
 		line-height: 25px;
 		color: ${color.lightGrey};
-		
+		font-weight: 400;
+	}
+
+	.p-doc {
+		line-height: 30px;
+		color: ${color.white};
+		margin-bottom: 39px;
 	}
 
 	a {

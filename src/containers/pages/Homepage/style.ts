@@ -246,9 +246,9 @@ export const EcommerceWrap = styled.div`
 
 export const Documentation = styled.section`
 	background-color: ${color.purple};
-	height: 1000px;
 	position: relative;
 	z-index: 1;
+	overflow: hidden;
 
 	&:before {
 		content: '';
@@ -277,6 +277,59 @@ export const Documentation = styled.section`
 	}
 `;
 
+export const WooImg = styled.img`
+	display: block;
+	position: absolute;
+	right: -133px;
+	top: 50px;
+`;
+
 export const InfoWrap = styled.div`
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+
+	&:before {
+		content: '';
+		width: 65px;
+		height: 65px;
+		border: 5px solid ${color.darkYellow};
+		border-radius: 50%;
+		position: absolute;
+		left: 100px;
+		top: 127px;
+	}
+
+	&:after {
+		content: '';
+		width: 65px;
+		height: 65px;
+		border: 5px solid ${color.darkYellow};
+		border-radius: 50%;
+		position: absolute;
+		right: 456px;
+		bottom: 48%;
+	}
+`;
+
+export const CircleLarger = styled.div`
+	width: 401px;
+	height: 401px;
+	border: 5px solid ${color.darkYellow};
+	border-radius: 50%;
+	position: absolute;
+	left: 100px;
+	top: 210px;
+`;
+
+export const CircleSmaller = styled.div`
+	width: 262px;
+	height: 262px;
+	border: 5px solid ${color.darkYellow};
+	border-radius: 50%;
+	position: absolute;
+	right: 70px;
+	bottom: 330px;
+	z-index: -1;
 `;

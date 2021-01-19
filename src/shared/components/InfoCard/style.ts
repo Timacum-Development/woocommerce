@@ -4,7 +4,14 @@ import { color } from '../../styles';
 export const CardWrap = styled.div`
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	max-width: 980px;
+	position: relative;
+	margin-bottom: 55px;
+
+	/* &:nth-of-type(2) {
+		margin-bottom: 0;
+	} */
 `;
 
 export const InfoImg = styled.img`
@@ -14,4 +21,5 @@ export const InfoImg = styled.img`
 
 export const InfoTextWrap = styled.div`
 	text-align: left;
+	padding: 13px 70px;
 `;

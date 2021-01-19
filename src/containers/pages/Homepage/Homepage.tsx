@@ -28,7 +28,10 @@ import {
 	Ecommerce,
 	EcommerceWrap,
 	Documentation,
-	InfoWrap
+	InfoWrap,
+	WooImg,
+	CircleLarger,
+	CircleSmaller
 } from './style';
 
 // Assets
@@ -55,6 +58,11 @@ import Small7 from '../../../assets/google-ads.png';
 import Small8 from '../../../assets/card-small1.png';
 import Small9 from '../../../assets/card-small2.png';
 import Small10 from '../../../assets/card-small3.png';
+import Doc1 from '../../../assets/girl-mac.png';
+import Doc2 from '../../../assets/brainstorming.png';
+import Dots4 from '../../../assets/green-vertical-develop.png';
+import Dots5 from '../../../assets/green-horizontal-develop.png';
+import Woo from '../../../assets/woo.png';
 
 // Components
 import CallToAction from '../../../shared/components/CTA';
@@ -64,6 +72,7 @@ import PaymentCard from '../../../shared/components/HeroCard';
 import DotGroup from '../../../shared/components/DotsImg';
 import Card from '../../../shared/components/Card';
 import CardImg from '../../../shared/components/CardImg';
+import InfoCard from '../../../shared/components/InfoCard';
 
 const Homepage = () => {
 	return (
@@ -201,7 +210,34 @@ const Homepage = () => {
 				</EcommerceWrap>
 			</Ecommerce>
 			<Documentation>
-				<InfoWrap className='container'></InfoWrap>
+				<WooImg src={Woo} />
+				<InfoWrap className='container'>
+					<CircleLarger />
+					<DotGroup dotsGroup={Dots4} style={{ left: '120px', top: '35%' }} />
+					<InfoCard
+						style={{ left: '-100px' }}
+						infoPic={Doc1}
+						infoTitle='Develop 
+						Without Limits'
+						infoText='WooCommerce is developer friendly, too. Built with a REST API, WooCommerce is scalable and can integrate with virtually any service. Design a complex store from scratch, extend a store for a client, or simply add a single product to a WordPress site—your store, your way.'
+					/>
+					<InfoCard
+						style={{
+							flexDirection: 'row-reverse',
+							right: '-100px',
+							alignItems: 'flex-start'
+						}}
+						infoPic={Doc2}
+						infoTitle='Know our 
+						Global Community'
+						infoText='WooCommerce is one of the fastest-growing eCommerce communities. We’re proud that the helpfulness of the community and a wealth of online resources are frequently cited as reasons our users love it. There are 80+ meetups worldwide!'
+					/>
+					<DotGroup
+						dotsGroup={Dots5}
+						style={{ right: '30px', bottom: '150px' }}
+					/>
+					<CircleSmaller />
+				</InfoWrap>
 			</Documentation>
 		</React.Fragment>
 	);
