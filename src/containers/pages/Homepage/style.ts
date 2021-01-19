@@ -232,8 +232,9 @@ export const SecurityIcon = styled.a`
 `;
 
 export const Ecommerce = styled.section`
-	padding-bottom: 56.25%;
-	height: 0;
+	/* padding-bottom: 56.25%;
+	height: 0; */
+	margin-bottom: 250px;
 `;
 
 export const EcommerceWrap = styled.div`
@@ -249,6 +250,7 @@ export const Documentation = styled.section`
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	margin-bottom: 205px;
 
 	&:before {
 		content: '';
@@ -260,7 +262,7 @@ export const Documentation = styled.section`
 		right: 0;
 		top: -75px;
 		z-index: -1;
-		clip-path: ellipse(55% 50% at 50% 50%);
+		clip-path: ellipse(60% 50% at 50% 50%);
 	}
 
 	&:after {
@@ -273,7 +275,7 @@ export const Documentation = styled.section`
 		right: 0;
 		bottom: -75px;
 		z-index: -1;
-		clip-path: ellipse(55% 50% at 50% 50%);
+		clip-path: ellipse(60% 50% at 50% 50%);
 	}
 `;
 
@@ -332,4 +334,69 @@ export const CircleSmaller = styled.div`
 	right: 70px;
 	bottom: 330px;
 	z-index: -1;
+`;
+
+export const Agency = styled.section`
+	width: 100%;
+	background: linear-gradient(
+		to bottom,
+		transparent,
+		${color.lightBlue},
+		transparent
+	);
+	position: relative;
+`;
+
+export const OneCardWrap = styled.div`
+	display: flex;
+	justify-content: center;
+	max-width: 1000px;
+	margin: 0 auto;
+`;
+
+export const OneCard = styled.div`
+	display: flex;
+	justify-content: center;
+	background-color: ${color.white};
+	border-radius: 20px;
+	max-width: 730px;
+	position: relative;
+	padding: 106px 82px 87px;
+
+	&:before {
+		content: '';
+		width: 678px;
+		height: 363px;
+		background-color: ${color.white};
+		box-shadow: 0px 18px 53px rgba(215, 228, 249, 0.5);
+		border-radius: 20px;
+		position: absolute;
+		bottom: -28px;
+		z-index: -5;
+	}
+
+	&:after {
+		content: '';
+		width: 618px;
+		height: 331px;
+		background-color: ${color.white};
+		box-shadow: 0px 18px 53px rgba(215, 228, 249, 0.6);
+		border-radius: 20px;
+		position: absolute;
+		bottom: -48px;
+		z-index: -10;
+	}
+`;
+
+export const CardParagraph = styled.p`
+	font-size: 1.6875rem;
+	line-height: 40px;
+	color: ${color.lightGrey};
+	text-align: center;
+`;
+
+export const Quote = styled.img`
+	display: block;
+	position: absolute;
+	top: 28px;
 `;

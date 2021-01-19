@@ -31,7 +31,12 @@ import {
 	InfoWrap,
 	WooImg,
 	CircleLarger,
-	CircleSmaller
+	CircleSmaller,
+	Agency,
+	OneCardWrap,
+	OneCard,
+	CardParagraph,
+	Quote
 } from './style';
 
 // Assets
@@ -63,6 +68,7 @@ import Doc2 from '../../../assets/brainstorming.png';
 import Dots4 from '../../../assets/green-vertical-develop.png';
 import Dots5 from '../../../assets/green-horizontal-develop.png';
 import Woo from '../../../assets/woo.png';
+import QuoteImg from '../../../assets/quote.png';
 
 // Components
 import CallToAction from '../../../shared/components/CTA';
@@ -239,6 +245,20 @@ const Homepage = () => {
 					<CircleSmaller />
 				</InfoWrap>
 			</Documentation>
+			<Agency>
+				<h2>Trusted by Agencies & Store Owners</h2>
+				<OneCardWrap>
+					<OneCard>
+						<Quote src={QuoteImg} />
+						<CardParagraph>
+							No other eCommerce platform allows people to start for free and
+							grow their store as their business grows. More importantly,
+							WooCommerce doesn't charge you a portion of your profits as your
+							business grows!
+						</CardParagraph>
+					</OneCard>
+				</OneCardWrap>
+			</Agency>
 		</React.Fragment>
 	);
 };

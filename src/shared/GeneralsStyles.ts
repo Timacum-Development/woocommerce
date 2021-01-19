@@ -95,7 +95,7 @@ export default createGlobalStyle`
 	h2 {
 		font-size: 3.4375rem;
 		line-height: 70px;
-		max-width: 500px;
+		max-width: 520px;
 		text-align: center;
 		margin: 0 auto;
 		margin-bottom: 81px;
@@ -145,6 +145,7 @@ export default createGlobalStyle`
 		margin-bottom: 39px;
 	}
 
+	
 	a {
 		display: inline-block;
 		text-decoration: none;
