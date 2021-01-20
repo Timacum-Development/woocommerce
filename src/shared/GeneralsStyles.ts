@@ -101,6 +101,10 @@ export default createGlobalStyle`
 		margin-bottom: 81px;
 	}
 
+	.agencies {
+		margin-bottom: 103px;
+	}
+
 	h3 {
 		font-size: 2.25rem;
 	}

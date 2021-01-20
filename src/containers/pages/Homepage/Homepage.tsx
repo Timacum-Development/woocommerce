@@ -36,7 +36,10 @@ import {
 	OneCardWrap,
 	OneCard,
 	CardParagraph,
-	Quote
+	Quote,
+	ArrowSlider,
+	ArrowLeft,
+	ArrowRight
 } from './style';
 
 // Assets
@@ -69,6 +72,14 @@ import Dots4 from '../../../assets/green-vertical-develop.png';
 import Dots5 from '../../../assets/green-horizontal-develop.png';
 import Woo from '../../../assets/woo.png';
 import QuoteImg from '../../../assets/quote.png';
+import Dots6 from '../../../assets/green-agencies-owners.png';
+import Dots7 from '../../../assets/red-agencies-owners.png';
+import People1 from '../../../assets/owner1.png';
+import People2 from '../../../assets/owner2.png';
+import People3 from '../../../assets/owner3.png';
+import People4 from '../../../assets/owner4.png';
+import People5 from '../../../assets/owner5.png';
+import People6 from '../../../assets/owner6.png';
 
 // Components
 import CallToAction from '../../../shared/components/CTA';
@@ -79,6 +90,7 @@ import DotGroup from '../../../shared/components/DotsImg';
 import Card from '../../../shared/components/Card';
 import CardImg from '../../../shared/components/CardImg';
 import InfoCard from '../../../shared/components/InfoCard';
+import People from '../../../shared/components/AgencyPeople';
 
 const Homepage = () => {
 	return (
@@ -246,8 +258,18 @@ const Homepage = () => {
 				</InfoWrap>
 			</Documentation>
 			<Agency>
-				<h2>Trusted by Agencies & Store Owners</h2>
+				<h2 className='agencies'>Trusted by Agencies & Store Owners</h2>
+				<People peopleUrl={People6} style={{ left: '391px', top: '70px' }} />
+				<People peopleUrl={People5} style={{ left: '102px' }} />
+				<People
+					peopleUrl={People4}
+					style={{ left: '256px', bottom: '-100px' }}
+				/>
 				<OneCardWrap>
+					<DotGroup
+						dotsGroup={Dots6}
+						style={{ left: '10px', bottom: '-130px', zIndex: '-30' }}
+					/>
 					<OneCard>
 						<Quote src={QuoteImg} />
 						<CardParagraph>
@@ -257,7 +279,18 @@ const Homepage = () => {
 							business grows!
 						</CardParagraph>
 					</OneCard>
+					<ArrowSlider>
+						<ArrowLeft />
+						<ArrowRight />
+					</ArrowSlider>
+					<DotGroup dotsGroup={Dots7} style={{ right: '0px', top: '26px' }} />
 				</OneCardWrap>
+				<People peopleUrl={People3} style={{ right: '448px', top: '50px' }} />
+				<People peopleUrl={People2} style={{ right: '223px', top: '50%' }} />
+				<People
+					peopleUrl={People1}
+					style={{ right: '396px', bottom: '-150px' }}
+				/>
 			</Agency>
 		</React.Fragment>
 	);

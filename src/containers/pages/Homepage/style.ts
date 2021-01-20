@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { color } from '../../../shared/styles';
 
 // Assets
@@ -338,13 +338,24 @@ export const CircleSmaller = styled.div`
 
 export const Agency = styled.section`
 	width: 100%;
-	background: linear-gradient(
-		to bottom,
-		transparent,
-		${color.lightBlue},
-		transparent
-	);
 	position: relative;
+	margin-bottom: 256px;
+
+	&:before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: linear-gradient(
+			to bottom,
+			transparent,
+			${color.lightBlue},
+			transparent
+		);
+		z-index: -20;
+	}
 `;
 
 export const OneCardWrap = styled.div`
@@ -352,12 +363,14 @@ export const OneCardWrap = styled.div`
 	justify-content: center;
 	max-width: 1000px;
 	margin: 0 auto;
+	position: relative;
 `;
 
 export const OneCard = styled.div`
 	display: flex;
 	justify-content: center;
 	background-color: ${color.white};
+	box-shadow: 0px 18px 53px rgba(215, 228, 249, 0.5);
 	border-radius: 20px;
 	max-width: 730px;
 	position: relative;
@@ -393,10 +406,116 @@ export const CardParagraph = styled.p`
 	line-height: 40px;
 	color: ${color.lightGrey};
 	text-align: center;
+	position: relative;
+	z-index: 50;
 `;
 
 export const Quote = styled.img`
 	display: block;
 	position: absolute;
 	top: 28px;
+`;
+
+export const ArrowSlider = styled.div`
+	display: flex;
+	position: absolute;
+	bottom: -90px;
+	right: 241px;
+`;
+
+export const ArrowAnimation = keyframes`
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.3);
+	}
+
+	100% {
+		transform: scale(1.3);
+	}
+`;
+export const ArrowLeft = styled.a`
+	width: 30px;
+	height: 2px;
+	background-color: ${color.grey};
+	margin-right: 27px;
+	position: relative;
+
+	&:before {
+		content: '';
+		width: 10px;
+		height: 2px;
+		background-color: ${color.grey};
+		position: absolute;
+		left: -2px;
+		bottom: -2px;
+		transform: rotate(30deg);
+	}
+
+	&:after {
+		content: '';
+		width: 10px;
+		height: 2px;
+		background-color: ${color.grey};
+		position: absolute;
+		left: -2px;
+		top: -2px;
+		transform: rotate(-30deg);
+	}
+
+	&:hover {
+		animation: ${ArrowAnimation} 0.25s ease-in-out forwards;
+		background-color: ${color.black};
+
+		&:before {
+			background-color: ${color.black};
+		}
+
+		&:after {
+			background-color: ${color.black};
+		}
+	}
+`;
+
+export const ArrowRight = styled.a`
+	width: 30px;
+	height: 2px;
+	background-color: ${color.grey};
+
+	&:before {
+		content: '';
+		width: 10px;
+		height: 2px;
+		background-color: ${color.grey};
+		position: absolute;
+		right: -2px;
+		bottom: -2px;
+		transform: rotate(-30deg);
+	}
+
+	&:after {
+		content: '';
+		width: 10px;
+		height: 2px;
+		background-color: ${color.grey};
+		position: absolute;
+		right: -2px;
+		top: -2px;
+		transform: rotate(30deg);
+	}
+
+	&:hover {
+		animation: ${ArrowAnimation} 0.25s ease-in-out forwards;
+		background-color: ${color.black};
+
+		&:before {
+			background-color: ${color.black};
+		}
+
+		&:after {
+			background-color: ${color.black};
+		}
+	}
 `;
