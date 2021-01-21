@@ -73,6 +73,7 @@ export default createGlobalStyle`
 		margin: 0 auto;
 	}
 
+
 	h1,
 	h2,
 	h3,
@@ -115,6 +116,17 @@ export default createGlobalStyle`
 		max-width: 265px;
 	}
 
+	.get-started {
+		color: ${color.white};
+		line-height: 53px;
+		max-width: 855px;
+		margin-right: 67px;
+	}
+
+	span {
+		font-weight: 400;
+	}
+
 	h4 {
 		font-size: 1.875rem;
 	}
@@ -141,6 +153,10 @@ export default createGlobalStyle`
 		line-height: 25px;
 		color: ${color.lightGrey};
 		font-weight: 400;
+	}
+	
+	.center {
+		text-align: center;
 	}
 
 	.p-doc {

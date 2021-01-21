@@ -21,6 +21,7 @@ export const GreenCta = styled.a`
 
 export const TransparentCta = styled.a`
 	padding: 26px 46px;
-	border: 1px solid ${color.white};
+	border: 2px solid ${color.white};
 	border-radius: 60px;
+	text-transform: uppercase;
 `;

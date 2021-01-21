@@ -462,7 +462,7 @@ export const ArrowLeft = styled.a`
 		position: absolute;
 		left: -2px;
 		top: -2px;
-		transform: rotate(-30deg);
+		transform: rotate(-35deg);
 	}
 
 	&:hover {
@@ -518,4 +518,57 @@ export const ArrowRight = styled.a`
 			background-color: ${color.black};
 		}
 	}
+`;
+
+export const RealPeople = styled.section`
+	position: relative;
+`;
+
+export const RealPeopleTxt = styled.div`
+	max-width: 660px;
+	margin: 0 auto;
+	margin-bottom: 16px;
+`;
+
+export const PeopleTitle = styled.h2`
+	margin-bottom: 31px;
+	max-width: 100%;
+`;
+
+export const Employee = styled.div`
+	display: flex;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+
+	&:before {
+		content: '';
+		width: 1438px;
+		max-width: 100%;
+		height: 273px;
+		background-color: ${color.simpleGrey};
+		position: absolute;
+		bottom: -120px;
+		z-index: -1;
+		border-radius: 50% 50% 0 0;
+	}
+`;
+
+export const EmployeeImg = styled.img`
+	display: block;
+`;
+
+export const GetStarted = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: ${color.darkPurple};
+	height: 282px;
+	position: relative;
+	z-index: 10;
+`;
+
+export const GetStartedWrap = styled.div`
+	display: flex;
+	align-items: center;
 `;

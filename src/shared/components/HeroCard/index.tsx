@@ -8,12 +8,12 @@ import {
 } from './style';
 
 const PaymentCard = (props: any) => {
-	const { logoPayment, text } = props;
+	const { logoPayment, text, payStyle } = props;
 	return (
 		<Payment>
 			<LogoTextWrap>
 				<a href='/'>
-					<LogoPayment src={logoPayment} />
+					<LogoPayment src={logoPayment} style={payStyle} />
 				</a>
 				<PaymentText>{text}</PaymentText>
 			</LogoTextWrap>

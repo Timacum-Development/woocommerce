@@ -39,7 +39,14 @@ import {
 	Quote,
 	ArrowSlider,
 	ArrowLeft,
-	ArrowRight
+	ArrowRight,
+	RealPeople,
+	RealPeopleTxt,
+	PeopleTitle,
+	Employee,
+	EmployeeImg,
+	GetStarted,
+	GetStartedWrap
 } from './style';
 
 // Assets
@@ -80,6 +87,7 @@ import People3 from '../../../assets/owner3.png';
 import People4 from '../../../assets/owner4.png';
 import People5 from '../../../assets/owner5.png';
 import People6 from '../../../assets/owner6.png';
+import Engineers from '../../../assets/people.png';
 
 // Components
 import CallToAction from '../../../shared/components/CTA';
@@ -169,7 +177,11 @@ const Homepage = () => {
 					<CardHero>
 						<PaymentCard logoPayment={Payment1} text='Stripe gateway' />
 						<PaymentCard logoPayment={Payment2} text='Paypal payments' />
-						<PaymentCard logoPayment={Payment3} text='Bank Transfers' />
+						<PaymentCard
+							logoPayment={Payment3}
+							text='Bank Transfers'
+							payStyle={{ margin: '0px 40px' }}
+						/>
 					</CardHero>
 					<CartIcon href='/'>
 						<Icon src={WhiteCart} />
@@ -292,6 +304,27 @@ const Homepage = () => {
 					style={{ right: '396px', bottom: '-150px' }}
 				/>
 			</Agency>
+			<RealPeople>
+				<RealPeopleTxt>
+					<PeopleTitle>Supported by real people</PeopleTitle>
+					<p className='center'>
+						Our team of Happiness Engineers works remotely from 58 countries
+						providing customer support across multiple time zones.
+					</p>
+				</RealPeopleTxt>
+				<Employee>
+					<EmployeeImg src={Engineers} />
+				</Employee>
+				<GetStarted>
+					<GetStartedWrap>
+						<h3 className='get-started'>
+							<span>WooCommerce - the</span> most customizable eCommerce
+							platform for building your online business.
+						</h3>
+						<CallToAction text='Get started' />
+					</GetStartedWrap>
+				</GetStarted>
+			</RealPeople>
 		</React.Fragment>
 	);
 };
