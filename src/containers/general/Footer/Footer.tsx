@@ -183,7 +183,9 @@ const Footer = () => {
 				<small>
 					Copyright woocommerce 2020 - terms & conditions privacy policy
 				</small>
-				<Automatic src={LogoAuto} />
+				<a href=''>
+					<Automatic src={LogoAuto} />
+				</a>
 			</Copyright>
 		</React.Fragment>
 	);
