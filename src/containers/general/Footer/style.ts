@@ -38,3 +38,20 @@ export const InfoFooter = styled.div`
 export const List = styled.li`
 	margin-bottom: 10px;
 `;
+
+export const Copyright = styled.div`
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 0;
+`;
+
+export const SocialWrap = styled.div`
+	display: flex;
+`;
+
+export const Automatic = styled.img`
+	display: block;
+	width: 183px;
+	height: 14px;
+`;

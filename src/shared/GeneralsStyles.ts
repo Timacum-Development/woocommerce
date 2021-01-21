@@ -182,6 +182,10 @@ export default createGlobalStyle`
 		cursor: pointer;
 	}
 
+	.a-icon {
+		margin-right: 54px;
+	}
+
 	ul {
 		align-items: center;
 		margin: 0;
@@ -208,4 +212,9 @@ export default createGlobalStyle`
 		text-align: center;
 	}
 
+	small {
+		font-size: 0.75rem;
+		text-transform: uppercase;
+		line-height: 22px;
+	}
 `;
