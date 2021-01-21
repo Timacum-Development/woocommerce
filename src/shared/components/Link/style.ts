@@ -13,4 +13,6 @@ export const BlueLink = styled.a`
 
 export const RegularLink = styled.a`
 	color: ${color.white};
+	font-size: 0.75rem;
+	text-transform: capitalize;
 `;

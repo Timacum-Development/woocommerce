@@ -88,6 +88,8 @@ import People4 from '../../../assets/owner4.png';
 import People5 from '../../../assets/owner5.png';
 import People6 from '../../../assets/owner6.png';
 import Engineers from '../../../assets/people.png';
+import Dots8 from '../../../assets/green-real-people.png';
+import Dots9 from '../../../assets/red-real-people.png';
 
 // Components
 import CallToAction from '../../../shared/components/CTA';
@@ -313,7 +315,15 @@ const Homepage = () => {
 					</p>
 				</RealPeopleTxt>
 				<Employee>
+					<DotGroup
+						dotsGroup={Dots8}
+						style={{ left: '83px', bottom: '-120px' }}
+					/>
 					<EmployeeImg src={Engineers} />
+					<DotGroup
+						dotsGroup={Dots9}
+						style={{ right: '144px', bottom: '-70px' }}
+					/>
 				</Employee>
 				<GetStarted>
 					<GetStartedWrap>

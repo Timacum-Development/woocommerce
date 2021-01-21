@@ -522,6 +522,28 @@ export const ArrowRight = styled.a`
 
 export const RealPeople = styled.section`
 	position: relative;
+
+	&:before {
+		content: '';
+		width: 61px;
+		height: 61px;
+		position: absolute;
+		left: 100px;
+		top: 250px;
+		border: 4px solid ${color.darkYellow};
+		border-radius: 50%;
+	}
+
+	&:after {
+		content: '';
+		width: 34px;
+		height: 34px;
+		position: absolute;
+		top: 49%;
+		left: 192px;
+		border: 4px solid ${color.darkYellow};
+		border-radius: 50%;
+	}
 `;
 
 export const RealPeopleTxt = styled.div`
@@ -552,6 +574,16 @@ export const Employee = styled.div`
 		z-index: -1;
 		border-radius: 50% 50% 0 0;
 	}
+
+	&:after {
+		content: '';
+		width: 43px;
+		height: 43px;
+		position: absolute;
+		right: 263px;
+		border: 4px solid ${color.darkYellow};
+		border-radius: 50%;
+	}
 `;
 
 export const EmployeeImg = styled.img`
@@ -571,4 +603,5 @@ export const GetStarted = styled.div`
 export const GetStartedWrap = styled.div`
 	display: flex;
 	align-items: center;
+	/* padding: 0 321px 0 467px; */
 `;

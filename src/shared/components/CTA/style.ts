@@ -23,5 +23,5 @@ export const TransparentCta = styled.a`
 	padding: 26px 46px;
 	border: 2px solid ${color.white};
 	border-radius: 60px;
-	text-transform: uppercase;
+	text-transform: uppercase !important;
 `;

@@ -73,6 +73,12 @@ export default createGlobalStyle`
 		margin: 0 auto;
 	}
 
+	.container2 {
+		max-width: 1480px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
 
 	h1,
 	h2,
@@ -146,6 +152,9 @@ export default createGlobalStyle`
 
 	h6 {
 		font-size: 0.875rem;
+		line-height: 53px;
+		text-transform: uppercase;
+		color: ${color.white};
 	}
 
 	p {
@@ -174,10 +183,13 @@ export default createGlobalStyle`
 	}
 
 	ul {
-		display: flex;
 		align-items: center;
 		margin: 0;
 		padding: 0;
+	}
+
+	.ul-header {
+		display: flex;
 	}
 
 	li {
@@ -195,4 +207,5 @@ export default createGlobalStyle`
 		color: ${color.white};
 		text-align: center;
 	}
+
 `;

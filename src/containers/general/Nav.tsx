@@ -6,7 +6,7 @@ import Link from '../../shared/components/Link';
 const Nav = () => {
 	return (
 		<Navigation>
-			<ul>
+			<ul className='ul-header'>
 				<li>
 					<Link head text='Sell' />
 				</li>
