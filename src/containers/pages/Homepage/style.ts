@@ -615,5 +615,5 @@ export const GetStarted = styled.div`
 export const GetStartedWrap = styled.div`
 	display: flex;
 	align-items: center;
-	padding: 78px 321px 79px 450px;
+	padding: 78px 321px 78px 450px;
 `;
