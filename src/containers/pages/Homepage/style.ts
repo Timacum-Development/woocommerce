@@ -608,7 +608,6 @@ export const GetStarted = styled.div`
 	justify-content: center;
 	align-items: center;
 	background-color: ${color.darkPurple};
-	height: 282px;
 	position: relative;
 	z-index: 10;
 `;
@@ -616,5 +615,5 @@ export const GetStarted = styled.div`
 export const GetStartedWrap = styled.div`
 	display: flex;
 	align-items: center;
-	padding: 0 321px 0 450px;
+	padding: 78px 321px 79px 450px;
 `;
