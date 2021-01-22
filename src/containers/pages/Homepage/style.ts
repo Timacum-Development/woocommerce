@@ -352,7 +352,7 @@ export const CircleSmaller = styled.div`
 export const Agency = styled.section`
 	width: 100%;
 	position: relative;
-	margin-bottom: 256px;
+	margin-bottom: 356px;
 
 	&:before {
 		content: '';

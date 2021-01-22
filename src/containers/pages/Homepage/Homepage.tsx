@@ -297,7 +297,7 @@ const Homepage = () => {
 						<ArrowLeft />
 						<ArrowRight />
 					</ArrowSlider>
-					<DotGroup dotsGroup={Dots7} style={{ right: '0px', top: '26px' }} />
+					<DotGroup dotsGroup={Dots7} style={{ right: '10px', top: '26px' }} />
 				</OneCardWrap>
 				<People peopleUrl={People3} style={{ right: '448px', top: '50px' }} />
 				<People peopleUrl={People2} style={{ right: '223px', top: '50%' }} />
