@@ -8,7 +8,7 @@ import {
 	List,
 	Copyright,
 	SocialWrap,
-	Automatic
+	Automatic,
 } from './style';
 
 // Assets
@@ -183,7 +183,7 @@ const Footer = () => {
 				<small>
 					Copyright woocommerce 2020 - terms & conditions privacy policy
 				</small>
-				<a href=''>
+				<a href='/'>
 					<Automatic src={LogoAuto} />
 				</a>
 			</Copyright>

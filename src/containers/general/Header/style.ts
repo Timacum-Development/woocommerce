@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-import { color } from '../../../shared/styles';
 
 export const HeaderAnimation = keyframes`
 	0% {
