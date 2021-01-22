@@ -55,7 +55,7 @@ export const Copyright = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 25px 0;
+	padding: 25px 0 21px 0;
 `;
 
 export const SocialWrap = styled.div`
