@@ -6,7 +6,7 @@ export const Payment = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 1px solid ${color.lightBlue};
-	padding: 0 40px 0 20px;
+	padding: 0 36px 0 20px;
 
 	&:nth-child(3) {
 		border-bottom: none;

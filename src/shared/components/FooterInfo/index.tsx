@@ -2,7 +2,7 @@ import React from 'react';
 import { FooterInfo, InfoIcon, InfoSpan, InfoText } from './style';
 
 const FooterCard = (props: any) => {
-	const { iconInfo, bold, text } = props;
+	const { iconInfo, bold, text, boldSecond } = props;
 	return (
 		<FooterInfo>
 			<InfoIcon src={iconInfo} />

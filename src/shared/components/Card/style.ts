@@ -7,6 +7,7 @@ export const EcommerceCard = styled.div`
 	width: 33%;
 	max-width: 430px;
 	position: relative;
+	margin-bottom: 150px;
 `;
 
 export const CardImg = styled.img`

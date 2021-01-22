@@ -16,6 +16,18 @@ export const WooFooter = styled.div`
 		position: absolute;
 		bottom: 0;
 	}
+
+	&:before {
+		content: '';
+		width: 89px;
+		height: 89px;
+		position: absolute;
+		right: -44px;
+		top: -78px;
+		z-index: 10;
+		border: 4px solid ${color.darkYellow};
+		border-radius: 50%;
+	}
 `;
 
 export const InfoFooterWrap = styled.div`
@@ -32,11 +44,11 @@ export const LogoWrap = styled.div`
 export const InfoFooter = styled.div`
 	display: flex;
 	justify-content: space-between;
-	padding: 34px 157px 0 217px;
+	padding: 34px 157px 64px 217px;
 `;
 
 export const List = styled.li`
-	margin-bottom: 10px;
+	margin-bottom: 0;
 `;
 
 export const Copyright = styled.div`

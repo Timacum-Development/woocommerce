@@ -222,7 +222,7 @@ const Homepage = () => {
 					/>
 					<CardImg
 						smallPic={Small8}
-						imgStyle={{ right: '-60px', top: '55%' }}
+						imgStyle={{ right: '-60px', bottom: '261px' }}
 					/>
 					<CardImg
 						smallPic={Small9}
@@ -266,7 +266,7 @@ const Homepage = () => {
 					/>
 					<DotGroup
 						dotsGroup={Dots5}
-						style={{ right: '30px', bottom: '150px' }}
+						style={{ right: '22px', bottom: '200px' }}
 					/>
 					<CircleSmaller />
 				</InfoWrap>

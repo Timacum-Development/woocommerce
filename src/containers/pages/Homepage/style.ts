@@ -4,6 +4,20 @@ import { color } from '../../../shared/styles';
 // Assets
 import Woo from '../../../assets/w.png';
 
+export const HeroIntroAnimation = keyframes`
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.3;
+	}
+
+	100% {
+		opacity: 1;
+	}
+`;
+
 export const Hero = styled.section`
 	display: flex;
 	align-items: center;
@@ -30,6 +44,7 @@ export const HeroIntro = styled.div`
 	max-width: 818px;
 	position: relative;
 	left: 220px;
+	animation: ${HeroIntroAnimation} 1s ease-in forwards;
 `;
 
 export const HeroText = styled.p`
@@ -232,9 +247,7 @@ export const SecurityIcon = styled.a`
 `;
 
 export const Ecommerce = styled.section`
-	/* padding-bottom: 56.25%;
-	height: 0; */
-	margin-bottom: 250px;
+	margin-bottom: 125px;
 `;
 
 export const EcommerceWrap = styled.div`
@@ -299,8 +312,8 @@ export const InfoWrap = styled.div`
 		border: 5px solid ${color.darkYellow};
 		border-radius: 50%;
 		position: absolute;
-		left: 100px;
-		top: 127px;
+		left: 63px;
+		top: 167px;
 	}
 
 	&:after {
@@ -332,7 +345,7 @@ export const CircleSmaller = styled.div`
 	border-radius: 50%;
 	position: absolute;
 	right: 70px;
-	bottom: 330px;
+	top: 575px;
 	z-index: -1;
 `;
 
@@ -567,10 +580,10 @@ export const Employee = styled.div`
 		content: '';
 		width: 1438px;
 		max-width: 100%;
-		height: 273px;
+		height: 373px;
 		background-color: ${color.simpleGrey};
 		position: absolute;
-		bottom: -120px;
+		bottom: -225px;
 		z-index: -1;
 		border-radius: 50% 50% 0 0;
 	}
@@ -603,5 +616,5 @@ export const GetStarted = styled.div`
 export const GetStartedWrap = styled.div`
 	display: flex;
 	align-items: center;
-	/* padding: 0 321px 0 467px; */
+	padding: 0 321px 0 450px;
 `;
