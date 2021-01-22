@@ -1,4 +1,5 @@
 import React from 'react';
+import './fonts/stylesheet.css';
 
 // General Styles
 import GeneralStyles from './shared/GeneralsStyles';
