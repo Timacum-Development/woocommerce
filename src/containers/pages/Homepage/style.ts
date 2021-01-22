@@ -70,7 +70,8 @@ export const LinkSpan = styled.span`
 
 export const HeroWrap = styled.div`
 	position: relative;
-	left: 365px;
+	left: 370px;
+	top: 52px;
 `;
 
 export const OfferWrap = styled.div`
